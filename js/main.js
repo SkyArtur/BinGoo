@@ -1,5 +1,5 @@
 import ElementBuilder from "./modules/getElements.js";
-import SelectorConstructor from "./modules/getSelctor.js";
+import SelectorConstructor from "./modules/getSelector.js";
 import { researcherCommands } from "./modules/getResearcher.js";
 
 function setCSSLink(){
@@ -16,7 +16,7 @@ function buidContainer(){
 
 window.addEventListener('load', setCSSLink());
 window.addEventListener('load', buidContainer());
-window.addEventListener('load', new ElementBuilder('container').buildUp());
-window.addEventListener('load', new SelectorConstructor('selector').buildUp());
+window.addEventListener('load', new ElementBuilder('container').build());
+window.addEventListener('load', new SelectorConstructor('selector').build());
 window.addEventListener('load', new SelectorConstructor('selector').run('super'));
 window.addEventListener('load', researcherCommands('search'));
