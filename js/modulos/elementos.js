@@ -1,8 +1,3 @@
-/* 
-    1º - Contruir a classe sem encapsular.
-    2º - encapsular metodos da classe
-    3º - Importar em principal.js e testar
-*/
 export default class ConstrutorElementos{
     constructor(nomeClasse){
         this.classe = nomeClasse

@@ -25,5 +25,4 @@ function comandosDePesquisa(nomeClasse){
     comandos.detectarClickBotao()
     comandos.detectarTeclaEnter()
 }
-
 export { comandosDePesquisa }

@@ -1,19 +1,9 @@
-/*------------------------------------------------------------------------------------
-        Configurações Gerais
 
-    Fontes:
-        font-family: 'Montserrat', sans-serif; 
-        font-family: 'Ubuntu', sans-serif;
-------------------------------------------------------------------------------------*/
 *,*::before, *::after{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-/* 
-    DIV container
-    1º Editar Container e Criar o media query
-*/
 .container{
     margin: 0 auto;
     width: 750px;
@@ -27,10 +17,6 @@
     display: flex;
     flex-flow: column;
 }
-/* 
-    DIV titulo
-    2º - Editar titulo e sua media query
-*/
 .titulo{
     height: 100px;
     text-align: center;
@@ -39,10 +25,6 @@
 .titulo.texto{
     padding: 25px;
 }
-/* 
-    DIV pesquisa
-    3º - Editar pesquisa e sua media query
-*/
 .pesquisa{
     height: fit-content;
     display: flex;
@@ -58,10 +40,6 @@
     font-family: 'Monserrat', sans-serif;
     font-size: 14px;
 }
-/* 
-    DIV seletor
-    4º - Editar seletor e sua media query
-*/
 .estilo{
     height: fit-content;
     display: flex;
@@ -79,12 +57,6 @@
     text-align: justify;
     border: none;
 }
-/*------------------------------------------------------------------------------------
-        Opções de Cores
-------------------------------------------------------------------------------------*/
-/*
-    ESCURO
-*/
 .body#escuro{
     background-color: rgb(17, 17, 17);
 }
@@ -116,9 +88,6 @@
     border: 1px solid rgba(70, 70, 70, 0.905);
     border-radius: 5px;
 }
-/*
-    CLARO
-*/
 .body#claro{
     background-color: rgb(214, 223, 237);
 }
@@ -149,9 +118,6 @@
     color: rgb(35, 35, 35);
     border-radius: 5px;
 }
-/*
-    VERMELHO
-*/
 .body#vermelho{
     background-color: rgb(92, 8, 9);
 }
@@ -183,9 +149,6 @@
     color: rgb(186, 186, 186);
     border-radius: 25px;
 }
-/*------------------------------------------------------------------------------------
-        Media querys
-------------------------------------------------------------------------------------*/
 @media all and (max-width: 750px){
     .container{
         width: 90%;
@@ -195,9 +158,6 @@
     .titulo{
         font-size: 35px;
     }
-    /* 
-        DIV pesquisa
-    */
     .pesquisa{
         flex-flow: column;
         padding: 5px 25px;
@@ -212,9 +172,6 @@
     .pesquisa.botao{
         width: 95%;
     }
-    /* 
-        DIV seletor
-    */
     .estilo{
         padding: 5px 25px;
         flex-flow: row;
@@ -227,9 +184,6 @@
         width: 40%;
         margin-right: 15px;
     }
-    /*
-        ESCURO
-    */
     .container#escuro{
         background-color: inherit;
     }
@@ -253,9 +207,6 @@
         box-shadow: none;
         margin-top: 5px;
     }
-    /*
-        CLARO
-    */
     .container#claro{
         background-color: inherit;
     }
@@ -275,9 +226,6 @@
         box-shadow: none;
         margin-top: 5px;
     }
-    /*
-        VERMELHO
-    */
     .container#vermelho{
         background-color: inherit;
     }
