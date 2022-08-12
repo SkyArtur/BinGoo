@@ -1,0 +1,237 @@
+/*------------------------------------------------------------------------------------
+        Configurações Gerais
+
+    Fontes:
+        font-family: 'Montserrat', sans-serif; 
+        font-family: 'Ubuntu', sans-serif;
+------------------------------------------------------------------------------------*/
+*,*::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* 
+    DIV container
+*/
+.container{
+    margin: 0 auto;
+    width: 750px;
+    height: 300px;
+    position: relative;
+    top: 250px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px 1px black;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-flow: column;
+}
+/* 
+    DIV titulo
+*/
+.titulo{
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+.titulo.texto{
+    padding: 25px;
+}
+/* 
+    DIV pesquisa
+*/
+.pesquisa{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 15px 75px;
+}
+.pesquisa.campo{
+    width: 80%;
+    font-family: 'Monserrat Mono', monospace;
+}
+.pesquisa.botao{
+    width: 20%;
+    font-family: 'Monserrat Mono', monospace;
+    font-size: 14px;
+}
+/* 
+    DIV seletor
+*/
+.estilo{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 5px 75px;
+    flex-flow: column;
+}
+.estilo.rotulo{
+    width: 75%;
+    margin: 5px;
+}
+.estilo.seletor{
+    width: 20%;
+    padding: 1em;
+    text-align: justify;
+    border: none;
+}
+
+/*------------------------------------------------------------------------------------
+        Media querys
+------------------------------------------------------------------------------------*/
+@media all and (max-width: 750px){
+    .container{
+        width: 90%;
+        top: 100px;
+        box-shadow: none;
+    }
+    .titulo{
+        font-size: 35px;
+    }
+    .titulo.texto{
+        padding: 25px;
+    }
+    /* 
+        DIV pesquisa
+    */
+    .pesquisa{
+        flex-flow: column;
+        padding: 5px 25px;
+        align-items: center;
+    }
+    .pesquisa.campo{
+        padding: 5px 0;
+        margin-bottom: 3px;
+        padding-left: 10px;
+        width: 95%;
+    }
+    .pesquisa.botao{
+        font-size: 14px;
+        width: 95%;
+    }
+    /* 
+        DIV seletor
+    */
+    .estilo{
+        padding: 5px 25px;
+        flex-flow: row;
+    }
+    .estilo.rotulo{
+        width: 60%;
+        font-size: 14px;
+    }
+    .estilo.seletor{
+        width: 40%;
+        margin-right: 15px;
+    }
+}
+
+@media all and (max-width: 380px){
+    .estilo.rotulo{
+        font-size: 12px;
+    }
+}
+/*------------------------------------------------------------------------------------
+        Opções de Cores
+------------------------------------------------------------------------------------*/
+
+/*
+    ESCURO
+*/
+.body#escuro{
+    background-color: rgb(17, 17, 17);
+}
+.container#escuro{
+    background-color: rgb(41, 41, 41);
+    color: #fff;
+}
+.campo#escuro{
+    box-shadow: inset 0 0 5px 1px rgb(31, 31, 31);
+    background-color: rgba(70, 70, 70, 0.905);
+    margin-right: 15px;
+    border-radius: 5px;
+}
+.botao#escuro{
+    box-shadow: 0 0 5px 3px rgba(31, 31, 31, 0.905);
+    background-color: rgb(41, 41, 41);
+    margin-right: 15px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+.botao#escuro:active{
+    box-shadow: none;
+}
+.seletor#escuro{
+    background-color: rgba(70, 70, 70, 0.905);
+    box-shadow: inset 0 0 8px 2px rgb(31, 31, 31);
+    color: #fff;
+    border: 1px solid rgba(70, 70, 70, 0.905);
+    border-radius: 5px;
+}
+/*
+    CLARO
+*/
+.body#claro{
+    background-color: rgb(214, 223, 237);
+}
+.container#claro{
+    background-color: rgb(165, 178, 198);
+}
+.campo#claro{
+    box-shadow: inset 0 0 5px 3px rgba(126, 133, 154, 0.905);
+    background-color: rgb(150, 158, 170);
+    margin-right: 15px;
+    border-radius: 5px;
+    border: none;
+}
+.botao#claro{
+    box-shadow: 0 0 5px 3px rgba(126, 133, 154, 0.905);
+    background-color: rgb(165, 178, 198);
+    margin-right: 15px;
+    border: none;
+    color: rgb(35, 35, 35);
+    border-radius: 5px;
+}
+.botao#claro:active{
+    box-shadow: none;
+}
+.seletor#claro{
+    background-color: rgb(150, 158, 170);
+    box-shadow: inset 0 0 8px 2px rgba(126, 133, 154, 0.905);
+    color: rgb(35, 35, 35);
+    border-radius: 5px;
+}
+/*
+    VERMELHO
+*/
+.body#vermelho{
+    background-color: rgb(92, 8, 9);
+}
+.container#vermelho{
+    background-color: rgb(181, 16, 16);
+    color: rgb(186, 186, 186);
+    border-radius: 40px;
+}
+.campo#vermelho{
+    box-shadow: inset 0 0 5px 3px rgb(92, 8, 9);
+    background-color: rgb(181, 16, 16);
+    margin-right: 15px;
+    border-radius: 25px;
+    border: none;
+}
+.botao#vermelho{
+    box-shadow: 0 0 5px 3px rgb(92, 8, 9);
+    background-color: rgb(181, 16, 16);
+    margin-right: 15px;
+    border: none;
+    color: rgb(186, 186, 186);
+    border-radius: 25px;
+}
+.botao#vermelho:active{
+    box-shadow: none;
+}
+.seletor#vermelho{
+    background-color: rgb(181, 16, 16);
+    color: rgb(186, 186, 186);
+    border-radius: 25px;
+}
