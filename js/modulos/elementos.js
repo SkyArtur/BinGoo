@@ -1,4 +1,9 @@
-export default class ConstruitorElementos{
+/* 
+    1º - Contruir a classe sem encapsular.
+    2º - encapsular metodos da classe
+    3º - Importar em principal.js e testar
+*/
+export default class ConstrutorElementos{
     constructor(nomeClasse){
         this.classe = nomeClasse
     }
@@ -35,6 +40,7 @@ export default class ConstruitorElementos{
         rotulo.innerHTML = 'Selecione o estilo:'
         seletor.setAttribute('class', 'super estilo seletor')
         seletor.setAttribute('name', 'seletor')
+        seletor.setAttribute('title', 'seletor')
         estilo.appendChild(rotulo)
         estilo.appendChild(seletor)
         return estilo

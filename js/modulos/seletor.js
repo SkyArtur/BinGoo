@@ -1,39 +1,38 @@
-class MudarCor{
+class IdsParaSelecao{
     constructor(nomeSuperClasse){
-        this.app = document.getElementsByClassName(nomeSuperClasse)
-        this.opcao = ['', 'escuro', 'claro', 'vermelho']
+        this.todosElementos = document.getElementsByClassName(nomeSuperClasse)
+        this.ids = ['', 'escuro', 'claro', 'vermelho']
     }
-    definirCor(value){
+    definirId(value){
         if (value != 0){
-            let id = this.opcao[value]
-            for(let i = 0; i < this.app.length; i++){
-                this.app[i].setAttribute('id', id)
+            let id = this.ids[value]
+            for(let i = 0; i < this.todosElementos.length; i++){
+                this.todosElementos[i].setAttribute('id', id)
             }
         }else{
-            for(let i = 0; i < this.app.length; i++){
-                this.app[i].removeAttribute('id')
+            for(let i = 0; i < this.todosElementos.length; i++){
+                this.todosElementos[i].removeAttribute('id')
             }
         }
     }
 }
-
 export default class ConstrutorSeletor{
-    constructor(nomeClasse){
-        this.elementos = document.getElementsByClassName(nomeClasse)[0]
-        this.cores = ['Padão', 'Escuro', 'Claro', 'Vermelho']
+    constructor(nomeSubClasse){
+        this.seletor = document.getElementsByClassName(nomeSubClasse)[0]
+        this.opcaoSeletor = ['Padão', 'Escuro', 'Claro', 'Vermelho']
     }
     construir(){
-        for(var i = 0; i < this.cores.length; i++){
+        for(var i = 0; i < this.opcaoSeletor.length; i++){
             let opcao = document.createElement('option')
             opcao.setAttribute('value', `${i}`)
-            opcao.innerHTML = `${this.cores[i]}`
-            this.elementos.appendChild(opcao)
+            opcao.innerHTML = `${this.opcaoSeletor[i]}`
+            this.seletor.appendChild(opcao)
         }
     }
     executar(nomeSuperClasse){
-        this.elementos.addEventListener('change', () => {
-           let mudar = new MudarCor(nomeSuperClasse)
-           mudar.definirCor(this.elementos.value)
+        this.seletor.addEventListener('change', () => {
+           let def_ids = new IdsParaSelecao(nomeSuperClasse)
+           def_ids.definirId(this.seletor.value)
         })
     }
 }
