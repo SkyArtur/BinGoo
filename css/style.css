@@ -17,60 +17,60 @@
     display: flex;
     flex-flow: column;
 }
-.titulo{
+.title{
     height: 100px;
     text-align: center;
     font-size: 40px;
 }
-.titulo.texto{
+.title.text{
     padding: 25px;
 }
-.pesquisa{
+.search{
     height: fit-content;
     display: flex;
     justify-content: center;
     padding: 15px 75px;
 }
-.pesquisa.campo{
+.search.field{
     width: 80%;
     font-family: 'Monserrat', sans-serif;
 }
-.pesquisa.botao{
+.search.button{
     width: 20%;
     font-family: 'Monserrat', sans-serif;
     font-size: 14px;
 }
-.estilo{
+.style{
     height: fit-content;
     display: flex;
     align-items: center;
     padding: 5px 75px;
     flex-flow: column;
 }
-.estilo.rotulo{
+.style.label{
     width: 75%;
     margin: 5px;
 }
-.estilo.seletor{
+.style.selector{
     width: 20%;
     padding: 1em;
     text-align: justify;
     border: none;
 }
-.body#escuro{
+.body#dark{
     background-color: rgb(17, 17, 17);
 }
-.container#escuro{
+.container#dark{
     background-color: rgb(41, 41, 41);
     color: #fff;
 }
-.campo#escuro{
+.field#dark{
     box-shadow: inset 0 0 5px 1px rgb(31, 31, 31);
     background-color: rgba(70, 70, 70, 0.905);
     margin-right: 15px;
     border-radius: 5px;
 }
-.botao#escuro{
+.button#dark{
     box-shadow: 0 0 5px 3px rgba(31, 31, 31, 0.905);
     background-color: rgb(41, 41, 41);
     margin-right: 15px;
@@ -78,30 +78,30 @@
     color: #fff;
     border-radius: 5px;
 }
-.botao#escuro:active{
+.button#dark:active{
     box-shadow: none;
 }
-.seletor#escuro{
+.selector#dark{
     background-color: rgba(70, 70, 70, 0.905);
     box-shadow: inset 0 0 8px 2px rgb(31, 31, 31);
     color: #fff;
     border: 1px solid rgba(70, 70, 70, 0.905);
     border-radius: 5px;
 }
-.body#claro{
+.body#clear{
     background-color: rgb(214, 223, 237);
 }
-.container#claro{
+.container#clear{
     background-color: rgb(165, 178, 198);
 }
-.campo#claro{
+.field#clear{
     box-shadow: inset 0 0 5px 3px rgba(126, 133, 154, 0.905);
     background-color: rgb(150, 158, 170);
     margin-right: 15px;
     border-radius: 5px;
     border: none;
 }
-.botao#claro{
+.button#clear{
     box-shadow: 0 0 5px 3px rgba(126, 133, 154, 0.905);
     background-color: rgb(165, 178, 198);
     margin-right: 15px;
@@ -109,31 +109,31 @@
     color: rgb(35, 35, 35);
     border-radius: 5px;
 }
-.botao#claro:active{
+.button#clear:active{
     box-shadow: none;
 }
-.seletor#claro{
+.selector#clear{
     background-color: rgb(150, 158, 170);
     box-shadow: inset 0 0 8px 2px rgba(126, 133, 154, 0.905);
     color: rgb(35, 35, 35);
     border-radius: 5px;
 }
-.body#vermelho{
+.body#red{
     background-color: rgb(92, 8, 9);
 }
-.container#vermelho{
+.container#red{
     background-color: rgb(181, 16, 16);
     color: rgb(186, 186, 186);
     border-radius: 40px;
 }
-.campo#vermelho{
+.field#red{
     box-shadow: inset 0 0 5px 3px rgb(92, 8, 9);
     background-color: rgb(181, 16, 16);
     margin-right: 15px;
     border-radius: 25px;
     border: none;
 }
-.botao#vermelho{
+.button#red{
     box-shadow: 0 0 5px 3px rgb(92, 8, 9);
     background-color: rgb(181, 16, 16);
     margin-right: 15px;
@@ -141,10 +141,10 @@
     color: rgb(186, 186, 186);
     border-radius: 25px;
 }
-.botao#vermelho:active{
+.button#red:active{
     box-shadow: none;
 }
-.seletor#vermelho{
+.selector#red{
     background-color: rgb(181, 16, 16);
     color: rgb(186, 186, 186);
     border-radius: 25px;
@@ -155,105 +155,105 @@
         top: 100px;
         box-shadow: none;
     }
-    .titulo{
+    .title{
         font-size: 35px;
     }
-    .pesquisa{
+    .search{
         flex-flow: column;
         padding: 5px 25px;
         align-items: center;
     }
-    .pesquisa.campo{
+    .search.field{
         padding: 5px 0;
         margin-bottom: 3px;
         padding-left: 10px;
         width: 95%;
     }
-    .pesquisa.botao{
+    .search.button{
         width: 95%;
     }
-    .estilo{
+    .style{
         padding: 5px 25px;
         flex-flow: row;
     }
-    .estilo.rotulo{
+    .style.label{
         width: 60%;
         font-size: 14px;
     }
-    .estilo.seletor{
+    .style.selector{
         width: 40%;
         margin-right: 15px;
     }
-    .container#escuro{
+    .container#dark{
         background-color: inherit;
     }
-    .campo#escuro{
+    .field#dark{
         padding: 15px;
     }
-    .botao#escuro{
+    .button#dark{
         margin-top: 15px;
         padding: 15px;
         width: 65%;
         border: double 4px rgb(36, 36, 36);
         background-color: inherit;
     }
-    .botao#escuro:hover{
+    .button#dark:hover{
         border: double 4px rgb(114, 114, 114);
         background-color: rgb(41, 41, 41);
     }
-    .seletor#escuro{
+    .selector#dark{
         background-color: rgb(17, 17, 17);
         border: none;
         box-shadow: none;
         margin-top: 5px;
     }
-    .container#claro{
+    .container#clear{
         background-color: inherit;
     }
-    .campo#claro{
+    .field#clear{
         background-color: inherit;
         padding: 15px;
     }
-    .botao#claro{
+    .button#clear{
         margin-top: 15px;
         padding: 15px;
         width: 65%;
     }
-    .seletor#claro{
+    .selector#clear{
         background-color: inherit;
         color: rgb(51, 51, 51);
         border: none;
         box-shadow: none;
         margin-top: 5px;
     }
-    .container#vermelho{
+    .container#red{
         background-color: inherit;
     }
-    .campo#vermelho{
+    .field#red{
         padding: 15px 0 15px 15px;
         border: double 3px rgb(59, 6, 6);
     }
-    .botao#vermelho{
+    .button#red{
         width: 45%;
         background-color: inherit;
         margin-top: 15px;
         border-radius: 5px;
     }
-    .botao#vermelho:active{
+    .button#red:active{
         text-decoration: underline;
     }
-    .seletor#vermelho{
+    .selector#red{
         background-color: rgb(92, 8, 9);
     }
 }
 @media all and (max-width: 380px){
-    .pesquisa.botao{
+    .pesquisa.button{
         font-size: 10px;
     }
-    .estilo.rotulo{
+    .style.label{
         font-size: 10px;
     }
-    .estilo.seletor{
+    .style.selector{
         font-size: 8px;
         padding: 0;
     }
