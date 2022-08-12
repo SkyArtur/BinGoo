@@ -26,7 +26,7 @@ export default class ElementBuilder{
         search.appendChild(buttom)
         return search
     }
-    #change(){
+    #selector(){
         let style = document.createElement('div')
         let label = document.createElement('h3')
         let selector = document.createElement('select')
@@ -40,11 +40,11 @@ export default class ElementBuilder{
         style.appendChild(selector)
         return style
     }
-    buildUp(){
+    build(){
         let container = document.getElementsByClassName(this.classElements)[0]
         container.appendChild(this.#title())
         container.appendChild(this.#search())
-        container.appendChild(this.#change())
+        container.appendChild(this.#selector())
     }
 }
 

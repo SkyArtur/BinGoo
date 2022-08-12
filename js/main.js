@@ -1,5 +1,5 @@
 import ElementBuilder from "./modules/getElements.js";
-import SelectorConstructor from "./modules/getChanger.js";
+import SelectorConstructor from "./modules/getSelctor.js";
 import { researcherCommands } from "./modules/getResearcher.js";
 
 function setCSSLink(){

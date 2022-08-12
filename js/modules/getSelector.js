@@ -21,7 +21,7 @@ export default class SelectorConstructor{
         this.selector = document.getElementsByClassName(subClassName)[0]
         this.options = ['Default', 'Dark', 'Clear', 'Red']
     }
-    buildUp(){
+    build(){
         for(var i = 0; i < this.options.length; i++){
             let option = document.createElement('option')
             option.setAttribute('value', `${i}`)
@@ -29,9 +29,9 @@ export default class SelectorConstructor{
             this.selector.appendChild(option)
         }
     }
-    run(nomeSuperClasse){
+    run(superClassName){
         this.selector.addEventListener('change', () => {
-           let def_ids = new IdsForSelection(nomeSuperClasse)
+           let def_ids = new IdsForSelection(superClassName)
            def_ids.setIds(this.selector.value)
         })
     }
