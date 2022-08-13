@@ -149,6 +149,37 @@
     color: rgb(186, 186, 186);
     border-radius: 25px;
 }
+.body#blue{
+    background-color: rgb(8, 21, 92);
+}
+.container#blue{
+    background-color: rgb(16, 49, 181);
+    color: rgb(186, 186, 186);
+    border-radius: 40px;
+}
+.field#blue{
+    box-shadow: inset 0 0 5px 3px rgb(8, 21, 92);
+    background-color: rgb(16, 49, 181);
+    margin-right: 15px;
+    border-radius: 25px;
+    border: none;
+}
+.button#blue{
+    box-shadow: 0 0 5px 3px rgb(8, 21, 92);
+    background-color: rgb(16, 49, 181);
+    margin-right: 15px;
+    border: none;
+    color: rgb(186, 186, 186);
+    border-radius: 25px;
+}
+.button#blue:active{
+    box-shadow: none;
+}
+.selector#blue{
+    background-color: rgb(16, 49, 181);
+    color: rgb(186, 186, 186);
+    border-radius: 25px;
+}
 @media all and (max-width: 750px){
     .container{
         width: 90%;
@@ -244,6 +275,26 @@
     }
     .selector#red{
         background-color: rgb(92, 8, 9);
+    }
+
+    .container#blue{
+        background-color: inherit;
+    }
+    .field#blue{
+        padding: 15px 0 15px 15px;
+        border: double 3px rgb(8, 21, 92);
+    }
+    .button#blue{
+        width: 45%;
+        background-color: inherit;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+    .button#blue:active{
+        text-decoration: underline;
+    }
+    .selector#blue{
+        background-color: rgb(16, 49, 181);
     }
 }
 @media all and (max-width: 380px){

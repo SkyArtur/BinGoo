@@ -1,7 +1,7 @@
 class IdsForSelection{
     constructor(superClassName){
         this.all = document.getElementsByClassName(superClassName)
-        this.ids = ['', 'dark', 'clear', 'red']
+        this.ids = ['', 'dark', 'clear', 'red', 'blue']
     }
     setIds(value){
         if (value != 0){
@@ -19,7 +19,7 @@ class IdsForSelection{
 export default class SelectorConstructor{
     constructor(subClassName){
         this.selector = document.getElementsByClassName(subClassName)[0]
-        this.options = ['Default', 'Dark', 'Clear', 'Red']
+        this.options = ['Default', 'Dark', 'Clear', 'Red', 'Blue']
     }
     build(){
         for(var i = 0; i < this.options.length; i++){
