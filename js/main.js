@@ -14,9 +14,11 @@ function buidContainer(){
     document.body.appendChild(container);
 }
 
-window.addEventListener('load', setCSSLink());
-window.addEventListener('load', buidContainer());
-window.addEventListener('load', new ElementBuilder('container').build());
-window.addEventListener('load', new SelectorConstructor('selector').build());
-window.addEventListener('load', new SelectorConstructor('selector').run('super'));
-window.addEventListener('load', researcherCommands('search'));
+window.addEventListener('load', () =>{
+    setCSSLink()
+    buidContainer()
+    new ElementBuilder('container').build()
+    new SelectorConstructor('selector').build()
+    new SelectorConstructor('selector').run('super')
+    researcherCommands('search')
+})
