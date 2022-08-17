@@ -1,4 +1,4 @@
-class ResearcherCommands{
+class SearchingCommands{
     constructor(className){
         this.elements = document.getElementsByClassName(className)
         this.field = this.elements[1]
@@ -21,9 +21,9 @@ class ResearcherCommands{
         })
     }
 }
-function researcherCommands(className){
-    let commands = new ResearcherCommands(className)
+function searchingCommands(className){
+    let commands = new SearchingCommands(className)
     commands.detectClick()
     commands.detectEnter()
 }
-export { researcherCommands }
+export { searchingCommands }

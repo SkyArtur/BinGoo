@@ -16,7 +16,7 @@ class IdsForSelection{
         }
     }
 }
-export default class SelectorConstructor{
+export default class Selector{
     constructor(subClassName){
         this.selector = document.getElementsByClassName(subClassName)[0]
         this.options = ['Default', 'Dark', 'Clear', 'Red', 'Blue']

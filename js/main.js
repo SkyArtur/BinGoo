@@ -1,6 +1,6 @@
-import ElementBuilder from "./modules/getElements.js";
-import SelectorConstructor from "./modules/getSelector.js";
-import { researcherCommands } from "./modules/getResearcher.js";
+import ElementBuilder from "./modules/elements.js";
+import Selector from "./modules/selector.js";
+import { searchingCommands } from "./modules/search.js";
 
 function setCSSLink(){
     let link = document.createElement('link');
@@ -18,7 +18,7 @@ window.addEventListener('load', () =>{
     setCSSLink()
     buidContainer()
     new ElementBuilder('container').build()
-    new SelectorConstructor('selector').build()
-    new SelectorConstructor('selector').run('super')
-    researcherCommands('search')
+    new Selector('selector').build()
+    new Selector('selector').run('super')
+    searchingCommands('search')
 })
