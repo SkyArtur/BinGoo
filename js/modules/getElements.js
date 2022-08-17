@@ -4,11 +4,8 @@ export default class ElementBuilder{
     }
     #title(){
         let title = document.createElement('div')
-        let text = document.createElement('h1')
         title.setAttribute('class', 'super title')
-        text.setAttribute('class', 'super title text')
-        text.innerHTML = 'BinGoo'
-        title.appendChild(text)
+        title.innerHTML = '<h1 class="super title text">BinGoo</h1>'
         return title
     }
     #search(){
@@ -28,15 +25,12 @@ export default class ElementBuilder{
     }
     #selector(){
         let style = document.createElement('div')
-        let label = document.createElement('h3')
         let selector = document.createElement('select')
         style.setAttribute('class', 'super style')
-        label.setAttribute('class', 'super style label')
-        label.innerHTML = 'Selecione o estilo:'
         selector.setAttribute('class', 'super style selector')
         selector.setAttribute('name', 'selector')
         selector.setAttribute('title', 'selector')
-        style.appendChild(label)
+        style.innerHTML = '<h3 class="super style label">Selecione o estilo:</h3>'
         style.appendChild(selector)
         return style
     }
