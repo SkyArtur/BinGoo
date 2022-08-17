@@ -31,8 +31,8 @@ export default class SelectorConstructor{
     }
     run(superClassName){
         this.selector.addEventListener('change', () => {
-           let def_ids = new IdsForSelection(superClassName)
-           def_ids.setIds(this.selector.value)
+           let defIds = new IdsForSelection(superClassName)
+           defIds.setIds(this.selector.value)
         })
     }
 }

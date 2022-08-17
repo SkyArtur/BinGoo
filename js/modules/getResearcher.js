@@ -1,7 +1,8 @@
 class ResearcherCommands{
     constructor(className){
-        this.field = document.getElementsByClassName(className)[1]
-        this.button = document.getElementsByClassName(className)[2]
+        this.elements = document.getElementsByClassName(className)
+        this.field = this.elements[1]
+        this.button = this.elements[2]
     }
     commandSearch(){
         window.open(`https://www.google.com/search?q=${this.field.value}`, '_blank')
